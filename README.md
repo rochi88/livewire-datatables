@@ -523,7 +523,7 @@ If you want to permanently save queries you must provide 3 methods for adding, d
 - ```public function deleteQuery(Int $id)```
 - ```public function getSavedQueries()```
 
-* In your save and delete methods, be sure to emit an ```updateSavedQueries``` livewire event and pass a fresh array of results (see example below)
+* In your save and delete methods, be sure to dispatch an ```updateSavedQueries``` livewire event and pass a fresh array of results (see example below)
 
 ### Example:
 This example shows saving queries using a conventional Laravel ComplexQuery model, that belongsTo a User

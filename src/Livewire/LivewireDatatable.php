@@ -141,7 +141,7 @@ class LivewireDatatable extends Component
 
     /**
      * This events allows to control the options of the datatable from foreign livewire components
-     * by using $emit.
+     * by using $dispatch.
      *
      * @example $this->dispatch('applyToTable', ['perPage' => 25]); // in any other livewire component on the same page
      */
@@ -991,7 +991,7 @@ class LivewireDatatable extends Component
         $this->setPage(1);
         $this->setSessionStoredFilters();
 
-        $this->emitTo('complex-query', 'resetQuery');
+        $this->dispatch('complex-query')->to('resetQuery');
     }
 
     public function removeBooleanFilter($column)
