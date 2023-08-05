@@ -11,8 +11,8 @@
         <path stroke-miterlimit="10" d="M313.66 206.75H.5V1.49l157.65 204.9L313.66 1.49v205.26z" />
     </svg>
 </div>
-<div class="@if ($column['hidden']) hidden @else relative h-12 overflow-hidden align-top flex table-cell @endif">
-    {{-- @include('datatables::style-width')> --}}
+<div class="@if ($column['hidden']) hidden @else relative h-12 overflow-hidden align-top flex table-cell @endif"
+    @include('datatables::style-width') >
 
     @if ($column['sortable'])
         <button wire:click="sort('{{ $index }}')"
