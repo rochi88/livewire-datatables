@@ -991,7 +991,7 @@ class LivewireDatatable extends Component
         $this->setPage(1);
         $this->setSessionStoredFilters();
 
-        $this->dispatch('complex-query')->to('resetQuery');
+        $this->dispatch('resetQuery')->to('complex-query');
     }
 
     public function removeBooleanFilter($column)
