@@ -28,7 +28,7 @@
     ],
     "require": {
         "php": "^8.0",
-        "illuminate/support": "^10.0",
+        "illuminate/support": "^10.0||^11.0",
         "livewire/livewire": "^3.0",
         "reedware/laravel-relation-joins": "^4.0",
         "spatie/simple-excel": "^3.0"
